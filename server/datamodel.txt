@@ -1,0 +1,32 @@
+USER:
+_id:           string
+firstName:     string
+lastName:      string
+friends:       Array<Friend>
+email:         string
+password:      string
+picturePath:   string ref
+location:      string
+occupation:    string
+viewedProfile: number
+impressions:   number
+
+POST:
+_id:             string
+userId:          string ref
+firstName:       string
+lastName:        string
+location:        string
+description:     string
+userPicturePath: string ref
+picturePath:     string ref
+likes:           object<string ref>
+comments:        Array<string>
+
+FRIEND (Sub Doc):
+_id:         string
+firstName:   string
+lastName:    string
+picturePath: string ref
+occupation:  string
+location:    string
